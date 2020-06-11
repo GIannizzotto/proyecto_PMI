@@ -502,6 +502,7 @@ footer p {
 
 .tabla.aulas .diponibilidad span {
     margin: 10px 0;
+    text-align: center;
 }
 
 .tabla.aulas .diponibilidad .divisor {
