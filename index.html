@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | FCFMyN</title>
+
+    <!-- Fuentes Tipográficas -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Archivos CSS -->
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Fav Icon -->
+    <link rel="icon" href="images/fav.svg?ver=1.0" type="image/svg">
+</head>
+<body>
+    <nav class="navegador inicio">
+        <div class="contenedor">
+            <div class="logo">
+                <img src="images/logo-fmn-blanco.svg" alt="logo fmc">
+            </div>
+            <div class="menu-movil" id="menu-movil" onclick="menuMovil();">
+                   <div class="hamburguesa"></div>
+            </div>
+            <ul class="menu" id="menu">
+                <li class="menu-item"><a href="index.html" id="inicio">Inicio</a></li>
+                <li class="menu-item"><a href="aulas.html" id="aulas">Aulas</a></li>
+                <li class="menu-item"><a href="horarios.html" id="horarios">Horarios</a></li>
+                <li class="menu-item"><a href="contacto.html" id="contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="cabecera inicio">
+        <div class="contenedor">
+            <div class="contenido-cabecera">
+                <ul class="redes-sociales">
+                    <li class="lineas-punteadas vertical"></li>
+                    <li class="rs-item"><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li class="rs-item"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="rs-item"><a href=""><i class="fab fa-youtube"></i></a></li>
+                    <li class="lineas-punteadas vertical"></li>
+                </ul>
+                <div class="texto-cabecera">
+                    <h2>Bienvenidos</h2>
+                    <h1>Facultad de Ciencias Físico Matemáticas y Naturales </h1>
+                </div>
+                <div class="imagen-cabecera">
+                    <img src="images/header-imagen.svg" alt="estudiante y detalles">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="principal inicio">
+        <div class="contenedor">
+            <section class="departamentos col-x-12">
+                <div class="fila">
+                    <div class="botonera-departamentos">
+                        <h2>Departamentos</h2>
+                        <div class="fila">
+                            <div class="col-x-12 col-s-6">
+                                <a href="" class="boton-departamento">
+                                    <div class="caja">
+                                        <h3>Electrónica</h3>
+                                        <div class="borde-animado"></div>
+                                    </div>
+                                </a>
+                                <a href="" class="boton-departamento">
+                                    <div class="caja">
+                                        <h3>Informática</h3>
+                                        <div class="borde-animado"></div>
+                                    </div>
+                                </a>
+                                <a href="" class="boton-departamento">
+                                    <div class="caja">
+                                        <h3>Física</h3>
+                                        <div class="borde-animado"></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-x-12 col-s-6">
+                                <a href="" class="boton-departamento">
+                                    <div class="caja">
+                                        <h3>Matemáticas</h3>
+                                        <div class="borde-animado"></div>
+                                    </div>
+                                </a>
+                                <a href="" class="boton-departamento">
+                                    <div class="caja">
+                                        <h3>Geología</h3>
+                                        <div class="borde-animado"></div>
+                                    </div>
+                                </a>
+                                <a href="" class="boton-departamento">
+                                    <div class="caja">
+                                        <h3>Minería</h3>
+                                        <div class="borde-animado"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="novedades col-x-12">
+                <div class="fila">
+                    <div class="noticia-principal col-x-12">
+                        <h2>Novedades</h2>
+                        <div class="fila">
+                            <a href="#">
+                                <img src="images/noticias/noticia-principal.jpg" alt="noticia principal">
+                                <div class="caja-texto">
+                                    <h3>Becas para los afectados del COVID-19</h3>
+                                </div>
+                            </a>
+                            <small>20 de Mayo - 2020</small>
+                        </div>
+                    </div>
+                    <div class="noticias col-x-12 col-s-8">
+                        <div class="fila">
+                            <div class="noticia col-x-12 col-s-6">
+                                <a href="">
+                                    <img src="images/noticias/noticia-1.jpg" alt="personal-unsl">
+                                    <div class="caja-texto">
+                                        <h3>Congreso de anual de Informática en la Facultad de CFMyN</h3>
+                                    </div>
+                                </a>
+                                <small>10 de Mayo - 2020</small>
+                            </div> 
+                            <div class="noticia col-x-12 col-s-6">
+                                <a href="">
+                                    <img src="images/noticias/noticia-2.jpg" alt="sesion-virtual">
+                                    <div class="caja-texto">
+                                        <h3>Primera Sesión Virtual del Consejo Directivo</h3>
+                                    </div>
+                                </a>
+                                <small>30 de Abril - 2020</small>
+                            </div> 
+                            <div class="clearfix"></div>
+                            <div class="noticia col-x-12 col-s-6">
+                                <a href="">
+                                    <img src="images/noticias/noticia-3.jpg" alt="modificación-calendario">
+                                    <div class="caja-texto">
+                                        <h3>Modificación del calendario académico 2020</h3>
+                                    </div>
+                                </a>
+                                <small>24 de Abril - 2020</small>
+                            </div> 
+                            <div class="noticia col-x-12 col-s-6">
+                                <a href="">
+                                    <img src="images/noticias/noticia-4.jpg" alt="inscripcion-anual">
+                                    <div class="caja-texto">
+                                        <h3>Comienza la inscripción anual 2020 en Abril</h3>
+                                    </div>
+                                </a>
+                                <small>14 de Marzo - 2020</small>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-x-12 boletin">
+                                <a class="boton" href="">Boletín de noticias</a> 
+                            </div>
+                        </div>                      
+                    </div>
+                    <div class="enlaces col-x-12 col-s-4">
+                        <h2>Enlaces de Interés</h2>
+                        <img src="images/logo-unsl.png" alt="logo unsl">
+                        <ul>
+                            <li><a class="boton-enlace" href="http://www.unsl.edu.ar/" target="_blank">UNSL</a></li>
+                            <li><a class="boton-enlace" href="https://planesestudio.unsl.edu.ar/index.php?action=unsl" target="_blank">Planes de Estudios</a></li>
+                            <li><a class="boton-enlace" href="https://galumnos.unsl.edu.ar/g3wmate/acceso" target="_blank">Sistema Guaraní</a></li>
+                            <li><a class="boton-enlace" href="http://www.noticias.unsl.edu.ar/tag/comedor-universitario/" target="_blank">Comedor Universitario</a></li>
+                            <li><a class="boton-enlace" href="http://www.secretariaacademica.unsl.edu.ar/" target="_blank">Secretaría Académica</a></li>
+                            <li><a class="boton-enlace" href="https://www.evirtual.unsl.edu.ar/moodle/" target="_blank">Aulas Virtuales</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="contacto col-x-12">
+                <div class="fila">
+                    <div class="mapa col-x-12">
+                        <div class="fila">
+                            <h2>¿En dónde nos encontramos?</h2>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3335.041491228378!2d-66.34116768524203!3d-33.29157749676121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d4394eeb9141a7%3A0x157909fa756450d7!2sAv.%20Ej%C3%A9rcito%20de%20los%20Andes%20950%2C%20D5700%20BPB%2C%20San%20Luis!5e0!3m2!1ses-419!2sar!4v1590102871018!5m2!1ses-419!2sar" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>            
+                    <div class="contacto-info col-x-12 col-m-6">
+                        <div class="fila">
+                            <h2>Contacto</h2>
+                            <p>Avenida Ejército de Los Andes 950 D5700HHW Tel: +54 (266) 4520300 San Luis – Argentina</p>
+                            <div class="caja">
+                                <p>Si tenes dudas o consultas no dudes en escribirnos a través del link de contacto</p>
+                                <a href="contacto.html" class="boton">Contacto</a>
+                            </div>
+                            <ul class="redes-sociales">
+                                <li class="lineas-punteadas horizontal"></li>
+                                <li class="rs-item"><a href=""><i class="fab fa-instagram"></i></a></li>
+                                <li class="rs-item"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li class="rs-item"><a href=""><i class="fab fa-youtube"></i></a></li>
+                                <li class="lineas-punteadas horizontal"></li>
+                            </ul>
+                        </div>            
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados &copy; - Diseñado y Desarrollado por Gustavo A. Iannizzotto</p>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
