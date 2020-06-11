@@ -61,7 +61,7 @@ function validarReserva(){
         error.classList.remove("mostrar");
     }
     
-    dia = document.getElementById("dia");
+    dia = document.getElementById("dia").value;
     if( dia === "" || dia.length === 0) {
         document.getElementById("campo-dia").firstElementChild.classList.add("mostrar");
         error.classList.add("mostrar");
