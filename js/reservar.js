@@ -229,6 +229,7 @@ function imprimirReserva(){
                                     <p><span>Fecha de reserva:</span> ${fecha}</p>
                                     <p><span>Horario:</span> ${horario}:00hs</p>
                                     <a href="#" class="boton-enlace">Descargar</a>
+                                    <a href="../aulas.html" class="boton-enlace">Nueva Reserva</a>
                                 </div>
                             </div>
                         </div>

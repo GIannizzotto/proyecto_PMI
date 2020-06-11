@@ -25,6 +25,8 @@ function validarLogin(){
         formulario[0].setAttribute("placeholder","Campo obligatorio: usuario");
         error.classList.add("mostrar");
         return false;
+    } else {
+        error.classList.remove("mostrar");
     }
 
     dato = formulario[1].value;
@@ -32,6 +34,8 @@ function validarLogin(){
         formulario[1].setAttribute("placeholder","Campo obligatorio: clave");
         error.classList.add("mostrar");
         return false;
+    } else {
+        error.classList.remove("mostrar");
     }
 
     if(dato === "123") {
@@ -40,7 +44,6 @@ function validarLogin(){
             location.replace("http://127.0.0.1:5501/aulas/reserva.html");
         },1500);
         return true;
-
     } else {
         error.classList.add("mostrar");
         return false;
