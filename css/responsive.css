@@ -1,0 +1,292 @@
+@media (min-width: 480px){
+    .referencia-colores h3 {
+        width: 20%;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 768px){
+    /*        Ajustes Generales 
+    ---------------------------------------*/
+    section h2,
+    aside h2 {
+        font-size: 32px;
+    }
+
+    /*            Navegador  
+    ---------------------------------------*/
+    .menu {
+        width: auto;
+        height: auto;
+        float: right;
+        position: relative;
+        top: auto;
+        left: auto;
+        background-color: transparent;
+        transition: none;
+    }
+
+    .menu-item {
+        display: inline-block
+    }
+
+    .menu-item a {
+        color: #db5c33;
+        border: 2px solid #db5c33;
+        display: inline-block
+    }
+
+    .menu-item:first-of-type a {
+        margin-top: 0;
+    }
+    
+    .navegador.inicio .menu-item a {
+        color: #ededed;
+        border: 2px solid #ededed;
+    }
+
+    .menu-movil {
+        display: none;
+    }
+    /*             Cabecera 
+    ---------------------------------------*/
+    .cabecera.inicio .texto-cabecera {
+        width: 430px;
+        margin-left: 80px;
+    }
+
+    .cabecera.inicio h1 {
+        font-size: 24px;
+    }
+    
+    .cabecera.inicio h2 {
+        font-size: 64px;
+    }
+
+    .imagen-cabecera img {
+        width: 75%;
+        float: right;
+        transform: translateX(-30px);
+    }
+
+    .imagen-cabecera {
+        float: right;
+    }
+
+    .cabecera.inicio .redes-sociales {
+        display: block;
+    }
+
+    .cabecera.inicio .redes-sociales {
+        position: absolute;
+        top: 265px;
+        text-align: center;
+        margin-left: 20px;
+    }
+    
+    .lineas-punteadas.vertical {
+        height: 140px;
+        width: 2px;
+        border-right: 2px dashed #ededed;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .cabecera.inicio .redes-sociales .rs-item {
+        margin: 15px 0;
+    }
+    
+    .cabecera.inicio .rs-item a {
+        color: #ededed;
+        font-size: 24px;
+    }
+
+    
+    /*        Principal - Inicio 
+    ---------------------------------------*/
+    .boton-departamento {
+        height: 100px;
+    }
+
+    .boton-departamento h3 { 
+        font-size: 24px;
+    }
+
+    .noticias {
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+    
+    .boletin a {
+        display: inline-block;
+    }
+
+    .enlaces h2 {
+        font-size: 24px;
+    }
+
+    .contacto .rs-item {
+        margin: 0 15px;
+    }
+
+    .contacto .rs-item a {
+        font-size: 24px;
+    }
+
+    .lineas-punteadas.horizontal {
+        width: 140px;
+    }
+
+    /*              Footer 
+    ---------------------------------------*/
+    footer p {
+        font-size: 14px;
+    }
+
+    /*               Aulas
+    ---------------------------------------*/
+    .administracion-aulas h2,
+    .administracion-aulas span {
+        text-align: center;
+    }
+
+    /*             Contacto
+    ---------------------------------------*/
+    .formulario {
+        margin-left: 16.66%;
+    }
+
+    /*             Horarios
+    ---------------------------------------*/
+    .desplegable {
+        width: 24%;
+        display: inline-block;
+        margin-left: 15px;
+    }
+
+    .desplegable-menu {
+        position: absolute;
+    }
+
+    /*           Modal login
+    ---------------------------------------*/
+    .formulario.login h3 {
+        margin-top: 15px;
+    }
+
+     /*            Reserva
+    ---------------------------------------*/
+    .formulario.reserva .campo {
+        width: 80%;
+    }
+
+    .formulario.reserva label {
+        display: inline;
+    }
+
+    .formulario.reserva select {
+        width: auto;
+    }
+
+    .formulario.reserva .campo.dia label,
+    .formulario.reserva .campo.horario label,
+    .formulario.reserva .campo.anio label {
+        position: relative;
+    }
+
+    .formulario.reserva .campo.dia label::after,
+    .formulario.reserva .campo.horario label::after,
+    .formulario.reserva .campo.anio label::after {
+        position: absolute;
+        top: 0;
+    }
+
+    .formulario.reserva .campo.dia label::after {
+        right: -130px;
+    }
+    
+    .formulario.reserva .campo.horario label::after {
+        right: -115px;
+    }
+
+    .formulario.reserva .campo.anio label::after {
+        right: -100px;
+    }
+
+    .formulario.reserva .campo.fecha input {
+        width: auto;
+        margin-top: 0;
+    }
+
+
+        /*          Ticket reserva
+    ---------------------------------------*/
+    .ticket {
+        margin-left: 25%;
+    }   
+}
+
+@media (min-width: 992px){   
+    /*        Principal - Inicio 
+    ---------------------------------------*/
+    .departamentos {
+        margin-bottom: 20px;
+    }
+
+    .novedades {
+        margin-bottom: 50px;
+    }
+
+    .novedades .caja-texto {
+        color: #ededed;
+        background-color: rgba(219,92,51,0.5);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 20px 30px;
+    }
+
+    .noticia-principal a {
+        height: 500px;
+    }
+
+    .noticia-principal {
+        margin-bottom: 50px;
+    }
+
+    .noticia-principal img {
+        transform: translateY(-160px);
+    }    
+
+    .contacto-info {
+        margin-left: 25%;
+    }
+
+    .contacto-info .caja {
+        padding: 30px;
+    }    
+    /*               Aulas
+    ---------------------------------------*/
+    .referencia-colores {
+        margin-left: 16.66%;
+    }
+
+    
+    /*             Contacto
+    ---------------------------------------*/
+    .formulario {
+        margin-left: 25%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    /*               Aulas
+    ---------------------------------------*/
+    .tabla.aulas,
+    .tabla.horarios,
+    .contenedor-tabla {
+        width: 100%;
+    }
+}

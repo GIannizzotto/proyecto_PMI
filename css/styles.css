@@ -1,0 +1,1044 @@
+/*        Ajustes Generales 
+---------------------------------------*/
+html {
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto Mono', monospace; 
+    background-color: #ededed;   
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a,
+a:hover { 
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: #3e3e3f;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+section h2,
+aside h2 {
+    color: #75232f;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.boton {
+    color: #75232f;
+    border: 2px solid #75232f;
+    text-align: center;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+/*            Navegador  
+---------------------------------------*/
+.navegador {
+    width: 100%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    padding: 30px 15px 0 15px;
+}
+
+.logo {
+    width: 60px;
+    float: left;
+}
+
+.menu {   
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: -2500px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: all 0.7s ease-in-out;
+    z-index: 1;
+}
+
+.menu.activado {
+    top: 0;
+}
+
+.menu-item a {
+    color: #ededed;
+    border: 2px solid #ededed;
+    font-weight: 700;
+    padding: 10px 15px;
+    margin: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    display: block;
+}
+
+.menu-item:first-of-type a {
+    margin-top: 80px;
+}
+
+.menu-movil {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.hamburguesa,
+.hamburguesa::before,
+.hamburguesa::after {
+    width: 35px;
+    height: 3px;
+    background-color: #db5c33;
+    border-radius: 4px;
+    transition: all .5s ease-in-out;
+}
+
+.navegador.inicio .hamburguesa,
+.navegador.inicio .hamburguesa::before,
+.navegador.inicio .hamburguesa::after {
+    background-color: #ededed;
+}
+
+.hamburguesa::before,
+.hamburguesa::after {
+    content: '';
+    position: absolute;
+}
+
+.hamburguesa::before {
+    top: -10px
+}
+
+.hamburguesa::after {
+    top: 10px
+}
+
+
+/*      Animación menú movil 
+---------------------------------------*/
+.menu-movil.x .hamburguesa {
+    background-color: #ededed;
+    transform: rotate(135deg);
+}
+
+.menu-movil.x .hamburguesa::before,
+.menu-movil.x .hamburguesa::after {
+    background-color: #ededed;
+    transform: rotate(90deg);
+    top: 0;
+}
+
+
+/*             Cabecera 
+---------------------------------------*/
+.cabecera {
+    width: 100%;
+    float: left;
+    color: #db5c33;
+    margin-top: 30px;
+}
+
+.cabecera h1 {
+    font-size: 32px;
+}
+
+.cabecera h2 { 
+    font-size: 14px;
+    color: #75232f;
+    font-weight: 400;
+}
+
+.cabecera.inicio {
+    color: #ededed;
+    float: none;
+    margin-top: 0;
+    background: rgb(117,35,47);
+    background: linear-gradient(90deg, #75232f 0%, #db5c33 100%);
+    padding: 20px 15px;
+}
+
+.cabecera.inicio h2 {
+    color: #ededed;
+    font-weight: 700;
+}
+
+.cabecera.inicio .texto-cabecera {
+    float: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.cabecera.inicio h1 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.cabecera.inicio h2 {
+    font-size: 32px;
+}
+
+.cabecera.inicio .redes-sociales {
+    display: none;
+}
+
+.imagen-cabecera {
+    float: left;
+}
+
+/*        Principal - Inicio 
+---------------------------------------*/
+.departamentos {
+    transform: translateY(-30px);
+}
+
+.botonera-departamentos,
+.tabla.aulas,
+.contenedor-tabla,
+.ticket {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #e2e2e2;
+    -webkit-box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.35);
+    box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.35);
+}
+
+.boton-departamento {
+    width: 100%;
+    height: 70px;
+    float: left;
+    border-radius: 5px;
+    padding: 10px 0 0 15px;
+    margin-bottom: 15px;
+    color: #ededed;
+    background: rgb(117,35,47);
+    background: linear-gradient(90deg, #75232f 0%, #db5c33 100%);
+}
+
+.boton-departamento h3 { 
+    font-size: 18px;
+}
+
+.botonera-departamentos div + div .boton-departamento:last-of-type {
+    margin-bottom: 0;
+}
+
+.boton-departamento .caja {
+    float: left;
+    position: relative;
+}
+
+.borde-animado {
+    width: 20px;
+    height: 2px;
+    background-color: #ededed;
+    transition: all 0.5s ease-in-out;
+}
+
+.boton-departamento:hover .borde-animado {
+    width: 100%;
+}
+
+.novedades {
+    margin-bottom: 30px;
+}
+
+.novedades h3 {
+    margin-top: 5px;
+}
+
+.noticia-principal a,
+.noticia a {
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+
+.noticia-principal {
+    margin-bottom: 30px;
+}
+
+.noticia-principal h3 {
+    font-size: 18px;
+}
+
+.noticia {
+    margin-bottom: 15px;
+}
+
+.noticias {
+    margin-bottom: 30px;
+}
+
+.noticias h3 {
+    font-size: 14px;
+}
+
+.novedades .caja-texto {
+    color: #db5c33;
+}
+
+.boton-enlace {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ededed;
+    background-color: #db5c33;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.35);
+    box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.35);
+}
+
+.enlaces img {
+    width: 40%;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.enlaces ul li:last-of-type .boton-enlace {
+    margin-bottom: 0;
+}
+
+.boletin a {
+    font-weight: 700;
+    display: block;
+}
+
+.mapa {
+    margin-bottom: 30px;
+}
+
+.contacto-info {
+    text-align: center;
+}
+
+.contacto-info .caja {
+    padding: 30px 15px;   
+    margin: 30px 0;
+    border-radius: 10px;
+    background: rgb(117,35,47);
+    background: linear-gradient(90deg, #75232f 0%, #db5c33 100%);
+}
+
+.contacto p {
+    font-family: 'Roboto Mono', serif;
+}
+
+.contacto-info .caja p {
+    color: #ededed;
+}
+
+.contacto-info .boton {
+    color: #ededed;
+    border: 2px solid #ededed;
+    display: inline-block;
+}
+
+.contacto .rs-item {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.contacto .rs-item a {
+    font-size: 18px;
+    color: #75232f;
+}
+
+.lineas-punteadas.horizontal {
+    display: inline-block;
+    height: 2px;
+    width: 70px;
+    padding: 3px 0;
+    border-top: 2px dashed #75232f;
+}
+
+/*              Footer 
+---------------------------------------*/
+footer {
+    width: 100%;
+    float: left;
+    background: linear-gradient(90deg, #75232f 0%, #db5c33 100%);
+    padding: 20px 15px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 10px;
+    font-family: 'Roboto Mono', serif;
+    color: #ededed;
+}
+
+/*               Aulas
+---------------------------------------*/
+.cabecera.aulas {
+    margin-bottom: 50px;
+}
+
+.referencia-colores {
+    margin-bottom: 30px;
+}
+
+.referencia-colores h3 {
+    text-align: center;
+    display: block;
+    float: left;
+    width: 100%;
+    color: #3e3e3f;
+    padding: 20px 15px;
+    margin-bottom: 10px;
+}
+
+.facultad-1 {
+    background-color: #ec6a3e;
+}
+
+.facultad-2 {
+    background-color: #ffc65d;
+}
+
+.facultad-3 {
+    background-color: #54da5f;
+}
+
+.facultad-4 {
+    background-color: #4cc3d9;
+}
+
+.facultad-5 {
+    background-color: #e09ddb;
+}
+
+.administracion-aulas {
+    text-align: center;
+}
+
+.boton-enlace.reservar {
+    display: inline-block;
+    padding: 15px 30px;
+}
+
+.administracion-aulas h2 {
+    font-size: 24px;
+    text-align: left;
+}
+
+.administracion-aulas span {
+    display: block;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.tabla.aulas {
+    width: 1400px;
+    text-align: center;
+}
+
+.scrolling {
+    overflow-x: scroll;
+}
+
+.tabla.aulas td {
+    width: 14.28%;
+    padding: 10px;
+}
+
+.tabla.aulas thead {
+    background-color: rgba(219,92,51,0.5);
+}
+
+.tabla.aulas thead th {
+    padding: 10px 0;
+}
+
+.tabla.aulas tbody tr:nth-of-type(even) {
+    background-color: #c2c2c2;
+}
+
+.tabla.aulas .boton-enlace {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 3px;
+    margin: 10px auto 10px auto;
+}
+
+.tabla.aulas .diponibilidad {
+    width: 100%;
+}
+
+.tabla.aulas .diponibilidad span {
+    margin: 10px 0;
+}
+
+.tabla.aulas .diponibilidad .divisor {
+    width: 100%;
+    border-bottom: 1px solid #9a9a9a;
+}
+
+.no {
+    font-size: 18px;
+    color: #c31d1d;
+}
+
+.si {
+    font-size: 18px;
+    color: #30b125;
+}
+
+.menu-item a.reservar {
+    color: #e2e2e2;
+    background-color: #db5c33;
+    font-weight: 400;
+}
+
+.tabla.aulas .horario {
+    font-weight: 700;
+}
+
+/*           Modal login
+---------------------------------------*/
+
+.modal {
+    position: fixed;
+    top: -1000px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    padding: 0 15px;
+    opacity: 1;
+    transition: all 400ms ease-in-out;
+    z-index: 100;
+}
+
+.modal p {
+    font-family: 'Roboto Mono', serif;
+}
+
+.modal.mostrar {
+	opacity:1;
+    top: 0;    
+	pointer-events: auto;
+}
+
+.modal .contenido {
+    width: 100%;
+    position: relative;
+    float: left;
+    padding: 50px 0;
+}
+
+.cerrar-modal a {
+    font-size: 24px;
+    color: #ededed;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.formulario.login h3 {
+    margin-top: 30px;
+}
+
+.formulario.login input[type="button"] {
+    margin-bottom: 30px;
+}
+
+.recuperar-clave {
+    color: #ededed;
+    display: block;
+}
+
+/*              Reserva
+---------------------------------------*/
+.cabecera.reserva {
+    margin-bottom: 30px;
+}
+
+.formulario.reserva .campo {
+    width: 100%;
+    text-align: left;
+}
+
+.formulario.reserva {
+    transition: all 0.5s ease-in-out;
+}
+
+.formulario.reserva label {
+    display: block;
+}
+
+.formulario.reserva input {
+    margin-bottom: 0;
+}
+
+.formulario.reserva select {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #ededed;
+    color: #ededed;
+    outline: none;
+    margin-top: 5px;
+}
+
+.formulario.reserva select option {
+    background-color: #db5c33;
+    outline: none;
+}
+
+.formulario.reserva .campo.anio label::after,
+.formulario.reserva .campo.estudiantes label::after,
+.formulario.reserva .campo.dia label::after,
+.formulario.reserva .campo.horario label::after,
+.formulario.reserva .campo.cuatrimestre span::after,
+.formulario.reserva .campo.tiempo span::after,
+.formulario.reserva .campo.fecha label::after {
+    font-family: FontAwesome;
+    font-size: 18px;
+    content: '\f00d';
+    margin-left: 5px;
+    display: none;
+}
+
+.formulario.reserva .campo.anio label.mostrar::after,
+.formulario.reserva .campo.estudiantes label.mostrar::after,
+.formulario.reserva .campo.dia label.mostrar::after,
+.formulario.reserva .campo.horario label.mostrar::after,
+.formulario.reserva .campo.cuatrimestre span.mostrar::after,
+.formulario.reserva .campo.tiempo span.mostrar::after,
+.formulario.reserva .campo.fecha label.mostrar::after {
+    display: inline;
+}
+
+.formulario.reserva input[type="number"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+.formulario.reserva .campo.estudiantes label {
+    position: relative;
+    display: inline;
+}
+
+.formulario.reserva .campo.estudiantes input {
+    width: 12%;
+}
+
+.formulario.reserva .campo.estudiantes label::after {
+    position: absolute;
+    top: 0;
+}
+
+.formulario.reserva .campo.estudiantes label::after {
+    right: -60px;
+}
+
+.formulario.reserva .campo.tiempo span,
+.formulario.reserva .campo.cuatrimestre span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formulario.reserva .campo.tiempo input,
+.formulario.reserva .campo.cuatrimestre input {
+    width: auto;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.formulario.reserva .campo.tiempo label,
+.formulario.reserva .campo.cuatrimestre label {
+    display: inline;
+}
+
+.formulario.reserva .campo.fecha,
+.formulario.reserva .campo.dia {
+    display: none;
+}
+
+.formulario.reserva .campo.fecha.mostrar-calendario,
+.formulario.reserva .campo.dia.mostrar-dia {
+    display: block;
+}
+
+.formulario.reserva .campo.fecha input {
+    width: 100%;
+    position: relative;
+    margin-top: 5px;
+}
+
+input::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+.formulario.reserva input[type="date"]::after {
+    font-family: FontAwesome;
+    content: '\f067';
+    font-size: 14px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    pointer-events: none;
+}
+
+.formulario.reserva .botones {
+    text-align: center;
+}
+
+.formulario.reserva .boton.anulado {
+    border: none;
+    background-color: rgba(0,0,0,0.35);
+}
+
+/*             Contacto
+---------------------------------------*/
+.cabecera.contacto {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.formulario  {
+    color: #ededed;
+    margin: 0 0 30px 0;
+    padding: 30px 15px;
+    border-radius: 10px;
+    background: rgb(117,35,47);
+    background: linear-gradient(90deg, #75232f 0%, #db5c33 100%);
+    text-align: center;
+}
+
+.formulario h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.formulario .campo {
+    width: 80%;
+    display: block;
+    margin: 0 auto 30px auto;
+}
+
+.formulario .campo.botones {
+    margin-bottom: 0;
+}
+
+.formulario input {
+    width: 100%;
+    color: #ededed;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-bottom: 1px solid #ededed;
+}
+
+.formulario label {
+    display: block;
+    text-align: left;
+}
+
+.formulario input::placeholder,
+.formulario textarea::placeholder {
+    opacity: 1;
+    color: #ededed;
+}
+
+.formulario input:focus::placeholder,
+.formulario textarea:focus::placeholder {
+    opacity: 0.5;
+}
+
+.formulario textarea:focus {
+    outline: none;
+    border: 1px solid #ededed;
+    border-radius: 0;
+}
+
+.formulario textarea {
+    width: 100%;
+    color: #ededed;
+    border: 1px solid #ededed;
+    height: 200px;
+    background-color: transparent;
+    padding: 5px 10px;
+}
+
+.formulario .boton {
+    width: auto;
+    border: 1px solid #ededed;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.error,
+.exito {
+    height: 0;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    transition-property: all;
+}
+
+.error p,
+.exito p {
+    font-family: 'Roboto Mono', serif;
+    margin: 0;
+}
+
+.error.mostrar,
+.exito.mostrar {
+    height: 100%;
+    opacity: 1;
+    display: inline-block;
+    background-color: #ededed;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+/*             Horarios
+---------------------------------------*/
+.cabecera.horarios {
+    margin-bottom: 30px;
+}
+
+.navegador-horarios {
+    width: 100%;
+    position: relative;
+    float: left;
+    text-align: center;
+}
+
+.desplegable {
+    width: 100%;
+    position: relative;
+    float: left;
+    margin-bottom: 15px;
+}
+
+.desplegable .boton-enlace {
+    margin-bottom: 0;
+}
+
+.desplegable li a {
+    color: #db5c33;
+    display: block;
+    padding: 10px 10px;
+}
+
+.desplegable li:hover,
+.activo {
+    background-color: #c4c4c4;
+}
+
+.desplegable-menu {
+    width: 100%;
+    background-color: #e2e2e2;
+    border-radius: 5px;
+    display: none;
+    margin-top: 5px;
+    padding: 5px 0;
+    z-index: 100;
+}
+
+.divisor {
+    width: 90%;
+    height: 1px;
+    margin: 5px auto;
+    display: block;
+    border-bottom: 1px solid #c1c1c1;
+}
+
+.cerrar {
+    display: none;
+}
+
+.abrir {
+    display: block;
+}
+
+.desplegable.anio,
+.desplegable.materia {
+    display: none;
+}
+
+.desplegable.anio.mostrar,
+.desplegable.materia.mostrar {
+    display: block;
+}
+
+.panel-materias {
+    margin-top: 30px;
+}
+
+.panel-materias h3,
+.titulo-horarios h3 {
+    color: #75232f;
+}
+
+.titulo-horarios {
+    margin-top: 30px;
+}
+
+.panel-materias h4 {
+    color: #3e3e3f;
+    margin: 30px 0 10px 0;
+}
+
+.panel-horarios h3 {
+    margin-bottom: 15px;
+}
+
+.panel-materias ul {
+    float: left;
+}
+
+.panel-materias a {
+    color: #ec6a3e;
+}
+
+.panel-materias a::after {
+    font-family: FontAwesome;
+    content: '\f054';
+    display: inline-block;
+    margin-left: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.panel-materias a:hover::after {
+    transform: rotate(90deg);
+}
+
+.panel-materias p {
+    font-family: 'Roboto Mono', serif;
+}
+
+.panel-materias a:hover {
+    color: #75232f;
+}
+
+.panel-materias .divisor {
+    width: 100%;
+    margin: 5px 0;    
+}
+
+.contenido-colapsable {
+    background: #e2e2e2;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.contenido-colapsable.abierto {
+    margin: 15px auto;
+}
+
+.contenedor-tabla {
+    width: 1240px;
+    margin-bottom: 30px;
+}
+
+.tabla.horarios {
+    width: 1200px;
+    text-align: center;
+    border-spacing: 0;
+    border-right: 1px solid #3e3e3f;
+}
+
+.tabla.horarios thead {
+    background-color: rgba(219,92,51,0.5);
+}
+
+.tabla.horarios thead th {
+    padding: 10px 0;
+    border-top: 1px solid #3e3e3f;
+    border-left: 1px solid #3e3e3f;
+    border-bottom: 1px solid #3e3e3f;
+}
+
+.tabla.horarios td {
+    width: 25%;
+    padding: 10px;
+    font-size: 10px;
+    border-left: 1px solid #3e3e3f;
+    border-bottom: 1px solid #3e3e3f;
+}
+
+
+/*          Ticket reserva
+---------------------------------------*/
+.principal.ticket-reserva {
+    margin-top: 50px;
+}
+
+.ticket-reserva p {
+    font-family: 'Roboto Mono', serif;
+}
+
+.ticket-reserva .logo {
+    margin-right: 15px;
+}
+
+.ticket-reserva p:first-of-type {
+    margin-top: 0;
+    font-weight: 700;
+    color: #75232f;
+}
+
+.ticket-reserva span {
+    font-weight: 700;
+}
+
+.ticket-reserva h2 {
+    color: #db5c33;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.ticket-reserva .boton-enlace {
+    display: block;
+    margin-top: 50px;
+    padding: 10px 20px;
+    float: right;
+}
+
+.ticket-reserva .divisor {
+    width: 100%;
+}
+
+

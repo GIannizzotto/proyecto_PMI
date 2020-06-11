@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas | FCFMyN</title>
+
+    <!-- Fuentes Tipográficas -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Archivos CSS -->
+    <link rel="stylesheet" href="../css/fontawesome-all.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    
+    <!-- Fav Icon -->
+    <link rel="icon" href="../images/fav.svg?ver=1.0" type="image/svg">
+</head>
+<body>
+
+    <nav class="navegador reserva">
+        <div class="contenedor">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo-fmn-color.svg" alt="logo fmc">
+                </a>
+            </div>
+            <div class="menu-movil" id="menu-movil" onclick="menuMovil();">
+                <div class="hamburguesa"></div>
+            </div>
+            <ul class="menu" id="menu">
+                <li class="menu-item"><a href="../index.html" id="inicio">Inicio</a></li>
+                <li class="menu-item"><a href="../aulas.html" id="aulas">Aulas</a></li>
+                <li class="menu-item"><a href="../horarios.html" id="horarios">Horarios</a></li>
+                <li class="menu-item"><a href="../contacto.html" id="contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="cabecera reserva">
+        <div class="contenedor">
+            <div class="contenido-cabecera">
+                <div class="texto-cabecera">
+                    <h1>Aulas</h1>
+                    <h2>Administración de aulas - Reserva</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="principal reserva">
+        <div class="contenedor">
+            <section class="reserva col-x-12">
+                <div class="fila">
+                    <div class="formulario reserva col-x-12 col-s-8 col-m-6" id="formulario-reserva-contenedor">
+                        <h3>Formulario de reserva</h3>
+                        <form action="mailto:aulero.fmn@gmail.com" id="formulario-reserva" method="POST" onsubmit="return validarReserva();">
+                            <div class="campo materia" id="campo-materia">
+                                <input type="text" name="materia" id="materia" placeholder="Materia">
+                            </div>
+                            <div class="campo anio" id="campo-anio">
+                                <label for="anio">Seleccione año:</label>
+                                <select name="anio" id="anio">
+                                    <option value="">Año</option>
+                                    <option value="1a">1 año</option>
+                                    <option value="2a">2 año</option>
+                                    <option value="3a">3 año</option>
+                                    <option value="4a">4 año</option>
+                                    <option value="5a">5 año</option>
+                                </select>
+                            </div>
+                            <div class="campo carrera" id="campo-carrera">
+                                <input type="text" name="carrera" id="carrera" placeholder="Carrera">
+                            </div>
+                            <div class="campo estudiantes" id="campo-estudiantes">
+                                <label for="estudiantes">Cantidad de estudiantes:</label>
+                                <input type="number" name="estudiantes" id="estudiantes" min="1">
+                            </div>
+                            <div class="campo cuatrimestre" id="campo-cuatrimestre">
+                                <span>Seleccione cuatrimestre:</span>
+                                <label for="cuatrimestre">Primero</label>
+                                <input type="radio" name="cuatrimestre" id="primero" value="primero">
+                                <label for="cuatrimestre">Segundo</label>
+                                <input type="radio" name="cuatrimestre" id="segundo" value="segundo">   
+                            </div>
+                            <div class="campo tiempo" id="campo-tiempo">
+                                <span>Seleccione tiempo:</span>
+                                <label for="tiempo">Un día</label>
+                                <input type="radio" name="tiempo" id="un-dia" value="dia" onclick="mostrarOpcion(this.id);">
+                                <label for="cuatrimestre">El cuatrimestre</label>
+                                <input type="radio" name="tiempo" id="cuatrimestre" value="cuatrimestre" onclick="mostrarOpcion(this.id);">    
+                            </div>
+                            <div class="campo dia" id="campo-dia">
+                                <label for="dia">Seleccione día:</label>
+                                <select name="dia" id="dia">
+                                    <option value="">Día</option>
+                                    <option value="lunes">Lunes</option>
+                                    <option value="martes">Martes</option>
+                                    <option value="miercoles">Miércoles</option>
+                                    <option value="jueves">Jueves</option>
+                                    <option value="viernes">Viernes</option>
+                                    <option value="sabado">Sábado</option>
+                                </select>
+                            </div>
+                            <div class="campo fecha" id="campo-fecha">
+                                <label for="fecha">Seleccion fecha:</label>                                
+                                <input type="date" name="fecha" id="fecha">
+                            </div>
+                            <div class="campo horario" id="campo-horario">
+                                <label for="horario">Seleccione horario:</label>
+                                <select name="horario" id="horario">
+                                    <option value="">Horario</option>
+                                    <option value="7">7:00hs</option>
+                                    <option value="8">8:00hs</option>
+                                    <option value="9">9:00hs</option>
+                                    <option value="10">10:00hs</option>
+                                    <option value="11">11:00hs</option>
+                                    <option value="12">12:00hs</option>
+                                    <option value="13">13:00hs</option>
+                                    <option value="14">14:00hs</option>
+                                    <option value="15">15:00hs</option>
+                                    <option value="16">16:00hs</option>
+                                    <option value="17">17:00hs</option>
+                                    <option value="18">18:00hs</option>
+                                    <option value="19">19:00hs</option>
+                                    <option value="20">20:00hs</option>
+                                    <option value="21">21:00hs</option>
+                                </select>
+                            </div>
+                            <div class="campo botones">
+                                <input type="submit" class="boton reservar" value="RESERVAR">
+                                <input type="button" class="boton imprimir anulado" id="boton-imprimir" disabled value="IMPRIMIR" onclick="imprimirReserva();">
+                            </div>
+                            <div class="error" id="error">
+                                <p>Tienes campos con errores</p>
+                            </div>
+                            <div class="exito" id="exito">
+                                <p>Reserva exitosa</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados &copy; - Diseñado y Desarrollado por Gustavo A. Iannizzotto</p>
+    </footer>
+    
+    <script src="../js/main.js"></script>
+    <script src="../js/reservar.js"></script>
+</body>
+</html>

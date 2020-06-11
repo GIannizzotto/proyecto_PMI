@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas | FCFMyN</title>
+
+    <!-- Fuentes Tipográficas -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Archivos CSS -->
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Fav Icon -->
+    <link rel="icon" href="images/fav.svg?ver=1.0" type="image/svg">
+</head>
+<body>
+
+    <nav class="navegador">
+        <div class="contenedor">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo-fmn-color.svg" alt="logo fmc">
+                </a>
+            </div>
+            <div class="menu-movil" id="menu-movil" onclick="menuMovil();">
+                <div class="hamburguesa"></div>
+            </div>
+            <ul class="menu" id="menu">
+                <li class="menu-item"><a href="index.html" id="inicio">Inicio</a></li>
+                <li class="menu-item"><a href="aulas.html" id="aulas">Aulas</a></li>
+                <li class="menu-item"><a href="horarios.html" id="horarios">Horarios</a></li>
+                <li class="menu-item"><a href="contacto.html" id="contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="cabecera horarios">
+        <div class="contenedor">
+            <div class="contenido-cabecera">
+                <div class="texto-cabecera">
+                    <h1>Horarios</h1>
+                    <h2>Consulta de cursadas</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="principal horarios">
+        <div class="contenedor">
+            <section class="horarios col-x-12">
+                <div class="fila">
+                    <div class="navegador-horarios">
+                        <ul class="menu-horarios">
+                            <li class="desplegable carrera">
+                                <a class="boton-enlace" href="#" id="carrera" onclick="abrirDesplegable(this.id);">Carrera <i class="fas fa-chevron-down"></i></a>
+                                <ul class="desplegable-menu" id="menu-carrera">
+                                    <li><a href="#" class="link" id="ing-elec-dig" onclick="elegirCarrera(this.id);">Ing. Elec. en Sist. Digitales</a></li>
+                                    <li class="divisor"></li>
+                                    <li><a href="#" class="link" id="prof-tecn" onclick="elegirCarrera(this.id);">Prof. en Tecnologías</a></li>
+                                    <li class="divisor"></li>
+                                    <li><a href="#" class="link" id="tue" onclick="elegirCarrera(this.id);">TUE</a></li>
+                                    <li class="divisor"></li>
+                                    <li><a href="#" class="link" id="tut" onclick="elegirCarrera(this.id);">TUT</a></li>
+                                </ul>
+                            </li>
+                            <li class="desplegable anio" id="desplegable-anio">
+                                <a class="boton-enlace" href="#" id="anio" onclick="abrirDesplegable(this.id);">Año <i class="fas fa-chevron-down"></i></a>
+                                <ul class="desplegable-menu" id="menu-anio">
+
+                                </ul>
+                            </li>  
+                        </ul>
+                    </div>
+                    <div class="panel-materias col-x-12" id="panel-materias">
+                       
+                    </div>
+                    <div class="titulo-horarios col-x-12" id="titulo-horarios">
+                        
+                    </div>
+                    <div class="panel-horarios col-x-12 scrolling" id="panel-horarios">
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados &copy; - Diseñado y Desarrollado por Gustavo A. Iannizzotto</p>
+    </footer>
+    
+    <script src="js/horarios.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

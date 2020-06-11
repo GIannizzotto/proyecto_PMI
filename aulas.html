@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas | FCFMyN</title>
+
+    <!-- Fuentes Tipográficas -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Archivos CSS -->
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Fav Icon -->
+    <link rel="icon" href="images/fav.svg?ver=1.0" type="image/svg">
+</head>
+<body>
+
+    <nav class="navegador">
+        <div class="contenedor">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo-fmn-color.svg" alt="logo fmc">
+                </a>
+            </div>
+            <div class="menu-movil" id="menu-movil" onclick="menuMovil();">
+                <div class="hamburguesa"></div>
+            </div>
+            <ul class="menu" id="menu">
+                <li class="menu-item"><a href="index.html" id="inicio">Inicio</a></li>
+                <li class="menu-item"><a href="aulas.html" id="aulas">Aulas</a></li>
+                <li class="menu-item"><a href="horarios.html" id="horarios">Horarios</a></li>
+                <li class="menu-item"><a href="contacto.html" id="contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="cabecera aulas">
+        <div class="contenedor">
+            <div class="contenido-cabecera">
+                <div class="texto-cabecera">
+                    <h1>Aulas</h1>
+                    <h2>Administración de aulas</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="principal aulas">
+        <div class="full-contenedor">
+            <section class="administracion-aulas col-x-12">
+                <div class="fila">
+                    <h2>Aulas Ingresadas</h2>
+                    <div class="scrolling col-x-12">
+                        <div class="fila">
+                            <table class="tabla aulas">
+                                <thead>
+                                    <tr>
+                                        <th>Código</th>
+                                        <th>Aula</th>
+                                        <th>Capacidad</th>
+                                        <th>Ubicación</th>
+                                        <th>Activada</th>
+                                        <th>Horario</th>
+                                        <th>Disponibilidad</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>70</td>
+                                        <td>51</td>
+                                        <td>30</td>
+                                        <td>planta baja</td>
+                                        <td>habilitada</td>
+                                        <td>
+                                            <a class="boton-enlace" href="aulas/a51-1c.html">1er Cuatrimestre</a>
+                                            <a class="boton-enlace" href="aulas/a51-2c.html">2do Cuatrimestre</a>
+                                        </td>
+                                        <td class="diponibilidad">
+                                            <span class="si">Sí</span>
+                                            <div class="divisor"></div>
+                                            <span class="no">No</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>71</td>
+                                        <td>52</td>
+                                        <td>50</td>
+                                        <td>planta baja</td>
+                                        <td>habilitada</td>
+                                        <td>
+                                            <a class="boton-enlace" href="aulas/a52-1c.html">1er Cuatrimestre</a>
+                                            <a class="boton-enlace" href="aulas/a52-2c.html">2do Cuatrimestre</a>
+                                        </td>
+                                        <td class="diponibilidad">
+                                            <span class="no">No</span>
+                                            <div class="divisor"></div>
+                                            <span class="no">No</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>72</td>
+                                        <td>53</td>
+                                        <td>30</td>
+                                        <td>planta baja</td>
+                                        <td>habilitada</td>
+                                        <td>
+                                            <a class="boton-enlace" href="aulas/a53-1c.html">1er Cuatrimestre</a>
+                                            <a class="boton-enlace" href="aulas/a53-2c.html">2do Cuatrimestre</a>
+                                        </td>
+                                        <td class="diponibilidad">
+                                            <span class="si">Sí</span>
+                                            <div class="divisor"></div>
+                                            <span class="si">Sí</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>73</td>
+                                        <td>54</td>
+                                        <td>50</td>
+                                        <td>planta baja</td>
+                                        <td>habilitada</td>
+                                        <td>
+                                            <a class="boton-enlace" href="aulas/a54-1c.html">1er Cuatrimestre</a>
+                                            <a class="boton-enlace" href="aulas/a54-2c.html">2do Cuatrimestre</a>
+                                        </td>
+                                        <td class="diponibilidad">
+                                            <span class="si">Sí</span>
+                                            <div class="divisor"></div>
+                                            <span class="no">No</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>76</td>
+                                        <td>57</td>
+                                        <td>80</td>
+                                        <td>planta baja</td>
+                                        <td>habilitada</td>
+                                        <td>
+                                            <a class="boton-enlace" href="aulas/a57-1c.html">1er Cuatrimestre</a>
+                                            <a class="boton-enlace" href="aulas/a57-2c.html">2do Cuatrimestre</a>
+                                        </td>
+                                        <td class="diponibilidad">
+                                            <span class="no">No</span>
+                                            <div class="divisor"></div>
+                                            <span class="si">Sí</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>129</td>
+                                        <td>58</td>
+                                        <td>100</td>
+                                        <td>planta baja</td>
+                                        <td>habilitada</td>
+                                        <td>
+                                            <a class="boton-enlace" href="aulas/a58-1c.html">1er Cuatrimestre</a>
+                                            <a class="boton-enlace" href="aulas/a58-2c.html">2do Cuatrimestre</a>
+                                        </td>
+                                        <td class="diponibilidad">
+                                            <span class="si">Sí</span>
+                                            <div class="divisor"></div>
+                                            <span class="si">Sí</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados &copy; - Diseñado y Desarrollado por Gustavo A. Iannizzotto</p>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
