@@ -1033,6 +1033,7 @@ input::-webkit-calendar-picker-indicator {
 .ticket-reserva .boton-enlace {
     display: block;
     margin-top: 50px;
+    margin-left: 15px;
     padding: 10px 20px;
     float: right;
 }
