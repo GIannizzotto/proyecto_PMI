@@ -218,7 +218,9 @@ function imprimirReserva(){
                             <div class="ticket col-x-12 col-s-6" id="ticket">
                                 <div class="contenido" id="contenido">
                                     <div class="logo">
-                                        <img src="../images/logo-fmn-color.svg" alt="logo fmc">
+                                        <a href="../index.html">
+                                            <img src="../images/logo-fmn-color.svg" alt="logo fmc">
+                                        </a>
                                     </div>
                                     <h2>Ticket</h2>
                                     <p>Comprobante de reserva</p>
