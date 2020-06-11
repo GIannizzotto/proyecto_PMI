@@ -224,6 +224,13 @@
     .ticket {
         margin-left: 25%;
     }   
+
+    .ticket-reserva .boton-enlace {
+        margin-top: 50px;
+        float: right;
+        padding: 15px 20px;
+        margin-left: 15px;
+    }
 }
 
 @media (min-width: 992px){   
