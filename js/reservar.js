@@ -75,10 +75,9 @@ function validarReserva(){
     for(let i = 0 ; i < radio.length; i++){
         if(radio[i].checked){
             cuatrimestre = radio[i].value;
-        } else {
-            cuatrimestre = "";
         }
     }
+    
     if( cuatrimestre === "" || cuatrimestre.length === 0) {
         document.getElementById("campo-cuatrimestre").firstElementChild.classList.add("mostrar");
         error.classList.add("mostrar");
@@ -92,8 +91,6 @@ function validarReserva(){
     for(let i = 0 ; i < radio.length; i++){
         if(radio[i].checked){
             tiempo = radio[i].value;
-        } else {
-            tiempo = "";
         }
     }
 
