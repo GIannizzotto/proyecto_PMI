@@ -41,7 +41,7 @@ function validarLogin(){
     if(dato === "123") {
         exito.classList.add("mostrar");
         setTimeout(function(){
-            location.replace("http://127.0.0.1:5501/aulas/reserva.html");
+            location.replace("https://giannizzotto.github.io/proyecto_PMI/aulas/reserva.html");
         },1500);
         return true;
     } else {
